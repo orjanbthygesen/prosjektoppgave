@@ -10,10 +10,10 @@ page = urllib.urlopen(url)
 page = page.read()
 soup = BeautifulSoup(page)
 
-person = soup.find('a', class_='noicon with-tooltip')
+person = soup.find_all('a', class_='noicon with-tooltip')
 
-for child in person.children:
-	print(child)
+for strings in person.strings:
+	print(strings)
 
 # # table = soup.find_all('table', class_='common-table')
 

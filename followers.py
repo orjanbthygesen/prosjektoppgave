@@ -16,6 +16,7 @@ page = page.read()
 soup = BeautifulSoup(page)
 
 tbody = soup.find_all('td',class_="count")
+
 print(tbody)
 # for numbers in tbody.
 # 	print(numbers.text)

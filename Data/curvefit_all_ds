@@ -1,0 +1,81 @@
+################################################
+# ds_449950
+################################################
+
+General model Power1:
+     f(x) = a*x^b
+Coefficients (with 95% confidence bounds):
+       a =   9.264e+07  (9.249e+07, 9.279e+07)
+       b =     -0.5958  (-0.5961, -0.5955)
+
+Goodness of fit:
+  SSE: 6.732e+15
+  R-square: 0.8714
+  Adjusted R-square: 0.8714
+  RMSE: 1.223e+05
+
+################################################
+# ds_100K
+################################################
+
+General model Power1:
+     f(x) = a*x^b
+Coefficients (with 95% confidence bounds):
+       a =    8.93e+07  (8.902e+07, 8.958e+07)
+       b =     -0.5771  (-0.5778, -0.5765)
+
+Goodness of fit:
+  SSE: 5.264e+15
+  R-square: 0.8956
+  Adjusted R-square: 0.8956
+  RMSE: 2.294e+05
+
+################################################
+# ds_10K
+################################################
+
+General model Power1:
+     f(x) = a*x^b
+Coefficients (with 95% confidence bounds):
+       a =   8.175e+07  (8.112e+07, 8.239e+07)
+       b =     -0.5344  (-0.5361, -0.5328)
+
+Goodness of fit:
+  SSE: 2.699e+15
+  R-square: 0.9333
+  Adjusted R-square: 0.9333
+  RMSE: 5.196e+05
+
+################################################
+# ds_5K
+################################################
+
+General model Power1:
+     f(x) = a*x^b
+Coefficients (with 95% confidence bounds):
+       a =   7.937e+07  (7.856e+07, 8.019e+07)
+       b =     -0.5202  (-0.5225, -0.5179)
+
+Goodness of fit:
+  SSE: 2.2e+15
+  R-square: 0.9391
+  Adjusted R-square: 0.9391
+  RMSE: 6.634e+05
+
+
+################################################
+# ds_2K
+################################################
+
+General model Power1:
+     f(x) = a*x^b
+Coefficients (with 95% confidence bounds):
+       a =   7.627e+07  (7.512e+07, 7.741e+07)
+       b =     -0.5004  (-0.504, -0.4969)
+
+Goodness of fit:
+  SSE: 1.696e+15
+  R-square: 0.9429
+  Adjusted R-square: 0.9429
+  RMSE: 9.212e+05
+

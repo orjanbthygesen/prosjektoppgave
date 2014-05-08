@@ -17,7 +17,7 @@ urlbase = 'http://www.socialbakers.com/twitter/'
 personName = open("personNames2.txt","wb")
 personFollowers = open("personFollowers2.txt","wb")
 
-for i in range(21,100):
+for i in range(1,9000):
 
 	### open page and create a soup object with html
 	url = urlbase + '/page-'+str(i)
@@ -44,20 +44,3 @@ for i in range(21,100):
 
 personName.close()
 personFollowers.close()
-
-# datafil = open("data.txt","wb")
-# datafil.write(text)
-# datafil.close()
-
-### Printer ut "Katy Perry" ###
-# person = soup.find('a', class_='noicon with-tooltip')
-# for strings in person.strings:
-# 	print(strings)
-
-### Printer ut alle personer i en suppe ###
-# personlist = soup.find_all('a', class_='noicon with-tooltip')
-# print personlist
-
-### Printer ut Lady Gaga-suppe
-# test = personlist[3].text
-# print test

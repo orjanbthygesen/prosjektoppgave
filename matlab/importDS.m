@@ -1,8 +1,8 @@
-filename = '/home/orjan/Prosjektoppgave/scraped/twitter_followers_5mars.txt';
-
+filename1 = '/home/orjan/Prosjektoppgave/scraped/twitter_followers_5mars.txt';
+filename2 = '/Users/orjanbthygesen/Git/prosjektoppgave/scraped/twitter_followers_5mars.txt';
 % imports and defines datasets
 
-ds_449950 = importdata(filename);
+ds_449950 = importdata(filename2);
 ds_100K = ds_449950;
 ds_100K(100001:449950,:) = [];
 ds_10K = ds_100K;

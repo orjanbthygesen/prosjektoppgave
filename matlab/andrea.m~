@@ -1,0 +1,54 @@
+close all
+
+%% Import twitter or youtube data
+
+% %Twitter
+n = 449950;
+filename = '/Users/orjanbthygesen/Git/prosjektoppgave/scraped/twitter_followers_5mars.txt';
+
+%YouTube
+% n  = 290250;
+% filename =  '/Users/orjanbthygesen/Git/prosjektoppgave/scraped/youtube_channelSubscribers4.txt';
+% 
+y = importdata(filename);
+
+
+
+%% Plot Lorenz Curve
+
+f = flipud(y);
+g = cumsum(f);
+
+plot(g,'b')
+grid on
+hold on
+
+%% Line of equality
+
+x1 = 1;
+x2 = n;
+y1 = 1;
+y2 = g(n);
+% a = [x1 g(x1)];
+% b = [x2 g(x2)];
+
+plot([x1 x2],[y1 y2],'r');
+hold on
+
+%% Gini equation
+sum_teller=0;
+sum_nevner=0;
+
+for i=1:n,
+   sum_teller = sum_teller + i*g(i);
+end
+
+for i=1:n,
+   sum_nevner = sum_nevner + g(i); 
+end
+teller=2*sum_teller;
+nevner=n*sum_nevner;
+gini = teller/nevner - ((n+1)/n)
+
+
+
